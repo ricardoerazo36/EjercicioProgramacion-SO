@@ -10,13 +10,13 @@ def fibonacci(n):
             a, b = b, a + b
         return b
 
-# Inicializamos el vector de longitud 12 con el valor 33 en cada posición
-vector = [33] * 12
+# Inicializamos el vector de longitud 144 con el valor 33 en cada posición
+vector = [33] * 144
 
 # Procesamos cada posición del vector para calcular el Fibonacci de cada valor
 for i in range(len(vector)):
     vector[i] = fibonacci(vector[i])
 
 # Mostramos el resultado final del vector
-print("Vector procesado con valores de Fibonacci:")
+print("Vector procesado con valores de Fibonacci (secuencial):")
 print(vector)
