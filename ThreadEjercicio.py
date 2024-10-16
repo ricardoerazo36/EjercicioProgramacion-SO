@@ -2,18 +2,6 @@ from threading import Thread
 from fibonacci import fibo
 from time import time
 
-# Función para calcular Fibonacci
-def fibonacci(n):
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        a, b = 0, 1
-        for _ in range(2, n + 1):
-            a, b = b, a + b
-        return b
-
 # Clase para trabajador con hilos
 class FiboWorker(Thread):
     def __init__(self, vector, idx):
@@ -22,7 +10,7 @@ class FiboWorker(Thread):
         self.idx = idx
 
     def run(self):
-        self.vector[self.idx] = fibonacci(self.vector[self.idx])
+        self.vector[self.idx] = fibon(self.vector[self.idx])
 
 def main():
     vector = [33] * 144
