@@ -1,4 +1,5 @@
 from threading import Thread
+from fibonacci import fibo
 from time import time
 
 # Función para calcular Fibonacci
